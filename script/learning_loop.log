@@ -1,0 +1,74 @@
+2026-03-10 15:24:16,127 - INFO - Starting retraining cycle -------------------
+2026-03-10 15:24:16,127 - INFO - Running train_price_model.py ...
+2026-03-10 15:24:16,319 - ERROR - train_price_model.py failed:
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_price_model.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+2026-03-10 15:24:16,319 - INFO - Running train_conversion_model.py ...
+2026-03-10 15:24:16,424 - ERROR - train_conversion_model.py failed:
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_conversion_model.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+2026-03-10 15:24:16,425 - INFO - Running train_lead_model.py ...
+2026-03-10 15:24:16,628 - ERROR - train_lead_model.py failed:
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_lead_model.py", line 1, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'
+
+2026-03-10 15:24:16,629 - INFO - Cycle finished. Sleeping 24 hours...
+2026-03-10 15:38:38,449 - INFO - Starting retraining cycle -------------------
+2026-03-10 15:38:38,449 - INFO - Running train_price_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-10 15:38:43,083 - ERROR - train_price_model.py failed (code 1):
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_price_model.py", line 14, in <module>
+    print("\U0001f680 Training Improved Price Prediction Model...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\XPRISTO\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+2026-03-10 15:38:43,084 - INFO - Running train_conversion_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-10 15:38:49,428 - ERROR - train_conversion_model.py failed (code 1):
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_conversion_model.py", line 42, in <module>
+    print("\u2705 Conversion model saved!")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\XPRISTO\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+
+2026-03-10 15:38:49,429 - INFO - Running train_lead_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-10 15:39:01,345 - INFO - Cycle finished. Sleeping 24 hours...
+2026-03-15 23:04:13,882 - INFO - Starting retraining cycle -------------------
+2026-03-15 23:04:13,883 - INFO - Running train_price_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-15 23:04:20,031 - ERROR - train_price_model.py failed (code 1):
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_price_model.py", line 14, in <module>
+    print("\U0001f680 Training OPTIMIZED Price Model on Ames Housing...")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\XPRISTO\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f680' in position 0: character maps to <undefined>
+
+2026-03-15 23:04:20,032 - INFO - Running train_conversion_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-15 23:04:29,171 - ERROR - train_conversion_model.py failed (code 1):
+Traceback (most recent call last):
+  File "C:\xampp\htdocs\crm\script\train_conversion_model.py", line 20, in <module>
+    print(" \u062a\u062d\u0633\u064a\u0646 \u0646\u0645\u0648\u0630\u062c \u0627\u0644\u062a\u062d\u0648\u064a\u0644 - \u062a\u062c\u0631\u0628\u0629 \u0623\u0641\u0636\u0644 \u0627\u0644\u062e\u0648\u0627\u0631\u0632\u0645\u064a\u0627\u062a")
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\XPRISTO\AppData\Local\Programs\Python\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode characters in position 1-5: character maps to <undefined>
+
+2026-03-15 23:04:29,172 - INFO - Running train_lead_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-15 23:04:34,314 - INFO - Running train_deal_model.py with C:\xampp\htdocs\crm\venv\Scripts\python.exe ...
+2026-03-15 23:04:41,226 - INFO - Cycle finished. Sleeping 24 hours...

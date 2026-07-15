@@ -1,0 +1,41 @@
+from flask import Flask, request, jsonify
+import joblib
+import numpy as np
+
+# تحميل النموذج
+model = joblib.load("model.pkl")
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "CRM AI Lead Classification API is running 🚀"
+
+@app.route("/predict", methods=["POST"])
+def predict():
+    data = request.get_json()
+
+    try:
+        # ترتيب الخصائص يجب أن يطابق التدريب
+        features = np.array([[
+            data["calls_count"],
+            data["visits_count"],
+            data["emails_count"],
+            data["browsing_time"],
+            data["favorites_count"],
+            data["budget"]
+        ]])
+
+        prediction = model.predict(features)[0]
+
+        return jsonify({
+            "lead_class": prediction
+        })
+
+    except Exception as e:
+        return jsonify({
+            "error": str(e)
+        })
+
+if __name__ == "__main__":
+    app.run(debug=True)

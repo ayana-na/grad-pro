@@ -1,0 +1,8 @@
+models/
+*.pkl
+*.joblib
+*.pth
+*.zip
+*.csv
+__pycache__/
+*.pyc
