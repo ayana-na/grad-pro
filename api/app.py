@@ -1,7 +1,9 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from .config import Config
-from services.ai_services import AIServices
+from .services.ai_services import AIServices
+from .recommender.recommendation_service import RecommendationService
+from .recommender.user_stage import UserStageDetector
 import pandas as pd
 from sqlalchemy import create_engine, text
 import logging
