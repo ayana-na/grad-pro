@@ -11,3 +11,4 @@ pymysql==1.1.0
 psycopg2-binary==2.9.7
 gunicorn==21.2.0
 imbalanced-learn==0.13.0
+python-dotenv==1.0.0
