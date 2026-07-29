@@ -1,7 +1,7 @@
 import os
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', "mysql+pymysql://root:@127.0.0.1/real_estate_ai")
+       SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL', "mysql+pymysql://root:@127.0.0.1/real_estate_ai")
     
 
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
