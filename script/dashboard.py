@@ -265,7 +265,7 @@ else:
                         st.metric("Predicted Conversion Probability", f"{prob:.3%}")
 
             except Exception as e:
-                st.error(f"Error explaining this lead: {str(e)}")
+                st.error(f"error explaining this lead: {str(e)}")
 
 
 st.markdown("---")
