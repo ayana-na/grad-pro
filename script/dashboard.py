@@ -241,7 +241,7 @@ else:
                     with st.spinner("Computing explanation..."):
                         shap_values_instance = explainer.shap_values(X_instance)
 
-                        # CatBoost binary handling
+                       
                         if isinstance(shap_values_instance, list) and len(shap_values_instance) > 1:
                             sv = shap_values_instance[1][0]
                             base_val = explainer.expected_value[1] if isinstance(explainer.expected_value, (list, np.ndarray)) else explainer.expected_value
